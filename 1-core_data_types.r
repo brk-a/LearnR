@@ -4,7 +4,7 @@
 # Core data types  #
 ###################
 
-# 5 core types: chr, int, num, factor, logical
+# 5 core types: chr, int, num, factor, logi
 
 # 1: chr is, simply, character; that is, string/text
 # 2: int is whole numbers (discrete, in stats terms)
@@ -14,9 +14,17 @@
 
 #assume a dataframe called friends. 4 columns: name (chr), height (chr),
 #age (num) and weight (num); types inferred by R by default
+friends <- read.csv("data/friends.csv")
+
+#relative, not absolute path
+#more on abs path later
+#double quotes. double quotes everywhere
 
 #structure of the df
-str(friends) #Jesus fvkn christ! Why'd they have to use `str`?
+str(friends) #Jesus fvkn christ! Why'd they use `str`?
+
+#summary of df
+summary(friends)
 
 #height (short, medium, tall) is ordinal dat, therefore, factor is
 #appropriate. Age is better off as int
