@@ -19,7 +19,7 @@ library()
 install.packages("readxl", dependencies=T)
 
 #there may be an error when installing; to catch it, do this
-if (!require(readxl)) install.packages('readxl')
+if (!require(readxl)) install.packages("readxl")
 library(readxl)
 
 #import the data required
