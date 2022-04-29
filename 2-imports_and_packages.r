@@ -64,5 +64,5 @@ library("tidyverse")
 
 friends %>%
 	select(Name, Age, Height) %>%
-	filter(Age > 23 & Height = "Medium") %>%
+	filter(Age > 23 & Height == "Medium") %>%
 	arrange(Height)
